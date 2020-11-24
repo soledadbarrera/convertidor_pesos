@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <h1>CONVERSOR de monedas</h1>
+    <h2>Convertidor de moneda en tiempo real 100% gratis</h2>
+    <p>Hemos desarrollado esta herramienta de conversión para aquellas personas que necesitan calcular el valor de diferentes divisas con datos actualizados.</p>
+    <form>
+      <div  class="grid-container">
+        <div class="grid-item item1">Cantidad</div>
+        <div class="grid-item item2"><input type="number" id="cantidad" required/></div>
+        <div class="grid-item item3">Desde</div>
+        <div class="grid-item item4">
+        <select class="form-control" name="desde" id="desde" onchange="seleccionarDesde()" required> 
+          <option value="BRL" class="f-select-BRL">Reales Brasileños [BRL]</option>
+          <option value="EUR" class="f-select-EUR">Euro Europa [EUR]</option>
+          <option value="USD" class="f-select-USD" selected="selected">Dólares Americanos [USD]</option>
+          <option value="JPY" class="f-select-JPY">Yen Japonés [JPY]</option>
+          <option value="CNY" class="f-select-CNY">Yuan Chino [CNY]</option>
+          <option value="ARS" class="f-select-ARS">Pesos Argentinos [ARS]</option>
+          </select>
+        </div>
+        <div class="grid-item item5">Hacia</div>
+        <div class="grid-item item6">
+          <select class="form-control" name="hacia" id="hacia" required>
+            <option value="CLP" class="f-select-CLP">Pesos Chilenos [CLP]</option>
+          </select>
+        </div>
+       <br>
+       <br>
+       <div class="grid-item item6"> <input type="button" value="Convertir" id="boton"> <br> <input type="reset" onclick="limpia()"></div>
+       <div class="grid-item item8"> <H1 id="resultado">---</H1></div>       
+      </div>
+    </form>
+    <div><a href="https://clicks.pipaffiliates.com/c?c=535374&l=es&p=0" target="_blank" rel="nofollow" class="footer-green">Gana dinero invirtiendo en la bolsa, este es el momento ideal! - Haz click aquí para más información</a></div><br>
+    <div class="footer2">Este convertidor de divisas, puede ser utilizado para conocer en tiempo real el valor de las monedas y así poder operar e <a href="https://inversion.uy/" title="Invertir en Uruguay">invertir</a> en el mercado forex, la bolsa de valores de NSYE, NASDAQ e <br> incluso con <a href="http://www.opciones-binarias.com/" title="opciones binarias">opciones binarias</a>. La información que proporcionamos es con fines ilustrativos y pueden no reflejar el estado actual de las cotizaciones.</div>
+    <div class="pie">
+    <p><a href="/valor-euro.php">Valor del euro</a> - <a href="/valor-dolar.php">Valor del d&oacute;lar</a> - <a href="/valor-bitcoin.php">Valor del bitcoin</a> - <a href="/valor-peso-mexicano.php">Valor del peso mexicano</a> - <a href="/valor-real.php">Valor del real</a> - <a href="/valor-dolar-canadiense.php">Valor del d&oacute;lar canadiense</a> - <a href="/valor-yen.php">Valor del yen</a> - <a href="/valor-peso-argentino.php">Valor del peso argentino</a> - <a href="/valor-libra.php">Valor de la libra</a></p>
+    <p class="copyright">Copyright (c) 2010 / 2020 - <strong>www.conversormonedas.com</strong> - Todos los derechos reservados. Las cotizaciones suministradas en este sitio son solamente de car&aacute;cter informativo y no oficial.</p>
+    <p>
+    <a href="/privacidad.php" rel="nofollow">Pol&iacute;tica de privacidad</a> -
+    <a href="/terminos.php" rel="nofollow">T&eacute;rminos de uso</a> -
+    <a href="/webmasters/">Webmasters</a> -
+    <a href="/contacto/" rel="nofollow">Contactar</a>
+    </p>
+    </div>
+      <script src="assets/js/main.js">
+      </script>
+  </body>
+</html>
